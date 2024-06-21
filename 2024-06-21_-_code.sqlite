@@ -1,0 +1,17 @@
+INSERT INTO Artist (name) VALUES ('Led Zeppelin')
+INSERT INTO Artist (name) VALUES ('AC/DC')
+
+INSERT INTO Genre (name) VALUES ('Hard Rock') ;
+INSERT INTO Genre (name) VALUES ('Metal')
+
+DELETE FROM Genre WHERE id = 3;
+DELETE FROM Genre WHERE id = 4;
+
+INSERT INTO Album (title, artist_id) VALUES ('Who Made Who', 2);
+INSERT INTO Album (title, artist_id) VALUES ('IV', 1)
+
+INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Blackdog', 5, 297, 0, 2, 1) ;
+INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Starway', 5, 482, 0, 2, 1) ;
+INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('About to Rock', 5, 313, 0, 1, 2) ;
+INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Who Made Who', 5, 207, 0, 1, 2) ;
+INSERT INTO Track (title, rating, len, count, album_id, genre_id) VALUES ('Starway', 5, 482, 0, 2, 1)
