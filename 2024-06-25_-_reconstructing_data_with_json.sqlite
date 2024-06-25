@@ -1,0 +1,7 @@
+select Album.title, Artist.name from Album join Artist on Album.artist_id = Artist.id
+
+select Album.title, Album.artist_id, Artist.id, Artist.name from Album join Artist on Album.artist_id = Artist.id
+
+select Track.title, Genre.name from Track join Genre on Track.genre_id = Genre.id
+
+select Track.title, Artist.name, Album.title, Genre.name from Track join Genre Join Album join Artist on Track.genre_id = Genre.id and Track.album_id = Album.id and Album.artist_id = Artist.id
